@@ -1,0 +1,23 @@
+ext{
+
+    versionName = "1.0.0"
+    versionCode = 1
+
+    //compilation
+    minSdkVersion = 17
+    compileSdkVersion = 27
+    targetSdkVersion = 25
+
+    //support
+    supportLib = '27.1.1'
+
+    //lib
+    timberVersion = '4.5.1'
+    jUnit = '4.12'
+    testRunner = '1.0.2'
+    mockLib = '1.10.19'
+    roboElectric = '3.8'
+
+    //filelogger
+    fileLogger = '1.0.5'
+}

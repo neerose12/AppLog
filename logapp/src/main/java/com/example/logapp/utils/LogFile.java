@@ -1,4 +1,4 @@
-package com.example.logapp;
+package com.example.logapp.utils;
 
 import android.os.Environment;
 
@@ -13,20 +13,11 @@ import java.util.Date;
 public class LogFile {
 
 
+    public LogFile() {
+
+    }
 
     public static void retrofitLog(String response){
-//        Log.d("checkingResponse",response);
-//        if(context == null){
-//            Log.d("checkingResponse","null");
-//
-//        }else {
-//            Log.d("checkingResponse","not null");
-//            Intent intent = new Intent();
-//        intent.setAction(Constant.INTENTFILTER_TRACK_MY_ACTIVITIES);
-//            intent.putExtra(Constant.ACTIVITY, response);
-//            context.sendBroadcast(intent);
-//        }
-
         String result ="\r\n"+ getCurrentDate() + "  "+response;
         writeFile(result);
     }
@@ -49,7 +40,7 @@ public class LogFile {
         File folder = new File(dir); //folder name
         folder.mkdirs();
 
-        File myFile = new File(dir,"log.txt");
+        File myFile = new File(dir,"logFile.txt");
         if (myFile.exists()) {
 
         } else {
