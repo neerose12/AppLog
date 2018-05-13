@@ -9,8 +9,15 @@ import android.widget.Button;
 
 import com.example.logapp.logger.Lg;
 import com.example.logapp.logger.StartLogging;
+import com.example.logapp.utils.LogFile;
+import com.parse.FindCallback;
+import com.parse.GetCallback;
+import com.parse.ParseException;
+import com.parse.ParseObject;
+import com.parse.ParseQuery;
 
 import java.io.File;
+import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,16 +26,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button btn = (Button)  findViewById(R.id.btn_app_logger);
+        Button btn = (Button) findViewById(R.id.btn_app_logger);
         Button btnLog = (Button) findViewById(R.id.btn_log);
 
-        btnLog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.d("CheckingLogging", "OK here");
-                StartLogging.init(MainActivity.this);
+        ParseQuery<ParseObject> query = ParseQuery.getQuery("Test");
+        query.getInBackground("dmFqNfWGis", new GetCallback<ParseObject>() {
+            public void done(ParseObject object, ParseException e) {
+                Log.d("CheckingData", "I am here   " + object.getString("log"));
+                if (e == null) {
+                    // object will be your game score
+                } else {
+                    // something went wrong
+                }
             }
         });
+
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,7 +51,6 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
-
 
 
 }

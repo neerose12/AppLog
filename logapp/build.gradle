@@ -3,10 +3,8 @@ apply from: 'configuration.gradle'
 android {
     compileSdkVersion 27
 
-
-
     defaultConfig {
-        minSdkVersion 15
+        minSdkVersion 16
         targetSdkVersion 27
         versionCode 1
         versionName "1.0"
@@ -39,5 +37,7 @@ dependencies {
     androidTestImplementation "com.android.support.test:runner:${testRunner}"
     androidTestImplementation "com.android.support.test:rules:${testRunner}"
     implementation "com.github.bosphere.android-filelogger:filelogger:${fileLogger}"
+    implementation 'com.parse:parse-android:1.16.7'
+    implementation 'com.github.neerose12.Channel:nettvchannel:1.0'
 
 }

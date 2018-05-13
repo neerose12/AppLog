@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">LogApp</string>
+    <string name="parse_server_url">https://parseapi.back4app.com/</string>
+    <string name="parse_app_id">z5ZmT4MYin2rFDpvIGDkGsH7vFMlx5IcT7s1Rv4b</string>
 </resources>
