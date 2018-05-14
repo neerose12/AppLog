@@ -38,6 +38,5 @@ dependencies {
     androidTestImplementation "com.android.support.test:rules:${testRunner}"
     implementation "com.github.bosphere.android-filelogger:filelogger:${fileLogger}"
     implementation 'com.parse:parse-android:1.16.7'
-    implementation 'com.github.neerose12.Channel:nettvchannel:1.0'
 
 }
