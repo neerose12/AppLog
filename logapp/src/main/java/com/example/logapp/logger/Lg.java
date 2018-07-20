@@ -7,10 +7,6 @@ public class Lg {
 
     public static void d(String log) {
         FL.d(log);
-
-        ParseObject gameScore = new ParseObject("AppLog");
-        gameScore.put("Log", log);
-        gameScore.saveInBackground();
     }
     public static void v(String log) {
         FL.v(log);
@@ -27,7 +23,4 @@ public class Lg {
     public static void i(String log) {
         FL.i(log);
     }
-
-
-
 }

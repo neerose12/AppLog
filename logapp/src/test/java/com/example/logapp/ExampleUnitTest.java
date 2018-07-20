@@ -1,6 +1,8 @@
 package com.example.logapp;
 
 import org.junit.Test;
+import org.junit.runner.RunWith;
+import org.junit.runners.JUnit4;
 
 import static org.junit.Assert.*;
 
@@ -9,6 +11,8 @@ import static org.junit.Assert.*;
  *
  * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
  */
+
+
 public class ExampleUnitTest {
     @Test
     public void addition_isCorrect() {

@@ -20,6 +20,10 @@ android {
         }
     }
 
+    compileOptions {
+        targetCompatibility 1.8
+        sourceCompatibility 1.8
+    }
 }
 
 dependencies {
@@ -39,4 +43,7 @@ dependencies {
     implementation "com.github.bosphere.android-filelogger:filelogger:${fileLogger}"
     implementation 'com.parse:parse-android:1.16.7'
 
+    // reactive
+    implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
+    implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
 }
