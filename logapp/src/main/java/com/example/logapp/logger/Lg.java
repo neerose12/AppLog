@@ -1,26 +1,27 @@
 package com.example.logapp.logger;
 
-import com.bosphere.filelogger.FL;
+import android.util.Log;
+
 import com.parse.ParseObject;
 
 public class Lg {
 
     public static void d(String log) {
-        FL.d(log);
+        Log.d("NETTV APP",log);
     }
     public static void v(String log) {
-        FL.v(log);
+        Log.v("NETTV APP",log);
     }
 
     public static void e(String log) {
-        FL.e(log);
+        Log.e("NETTV APP",log);
     }
 
     public static void w(String log) {
-        FL.w(log);
+        Log.w("NETTV APP",log);
     }
 
     public static void i(String log) {
-        FL.i(log);
+        Log.i("NETTV APP",log);
     }
 }

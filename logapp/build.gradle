@@ -40,7 +40,7 @@ dependencies {
     androidTestImplementation "com.android.support:support-annotations:${supportLib}"
     androidTestImplementation "com.android.support.test:runner:${testRunner}"
     androidTestImplementation "com.android.support.test:rules:${testRunner}"
-    implementation "com.github.bosphere.android-filelogger:filelogger:${fileLogger}"
+//    implementation "com.github.bosphere.android-filelogger:filelogger:${fileLogger}"
     implementation 'com.parse:parse-android:1.16.7'
 
     // reactive
