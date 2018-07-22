@@ -19,7 +19,7 @@ public class StartLogging  {
                 .defaultTag("Nettv Log")   // customise default tag
                 .minLevel(FLConst.Level.V)   // customise minimum logging level
                 .logToFile(true)   // enable logging to file
-                .dir(new File(Environment.getExternalStorageDirectory(),  "myDirectory"+ File.separator +"logFile.txt"))    // customise directory to hold log files
+                .dir(new File("myDirectory"+ File.separator +"logFile.txt"))    // customise directory to hold log files
                 .retentionPolicy(FLConst.RetentionPolicy.FILE_COUNT) // customise retention strategy
                 .maxFileCount(FLConst.DEFAULT_MAX_FILE_COUNT)    // customise how many log files to keep if retention by file count
                 .maxTotalSize(FLConst.DEFAULT_MAX_TOTAL_SIZE)    // customise how much space log files can occupy if retention by total size

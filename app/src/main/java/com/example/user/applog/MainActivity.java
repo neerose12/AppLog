@@ -28,18 +28,17 @@ public class MainActivity extends AppCompatActivity {
 
         Button btn = (Button) findViewById(R.id.btn_app_logger);
         Button btnLog = (Button) findViewById(R.id.btn_log);
-
-        ParseQuery<ParseObject> query = ParseQuery.getQuery("Test");
-        query.getInBackground("dmFqNfWGis", new GetCallback<ParseObject>() {
-            public void done(ParseObject object, ParseException e) {
-                Log.d("CheckingData", "I am here   " + object.getString("log"));
-                if (e == null) {
-                    // object will be your game score
-                } else {
-                    // something went wrong
-                }
-            }
-        });
+//
+//        ParseQuery<ParseObject> query = ParseQuery.getQuery("Test");
+//        query.getInBackground("dmFqNfWGis", new GetCallback<ParseObject>() {
+//            public void done(ParseObject object, ParseException e) {
+//                if (e == null) {
+//                    // object will be your game score
+//                } else {
+//                    // something went wrong
+//                }
+//            }
+//        });
 
 
         btn.setOnClickListener(new View.OnClickListener() {
